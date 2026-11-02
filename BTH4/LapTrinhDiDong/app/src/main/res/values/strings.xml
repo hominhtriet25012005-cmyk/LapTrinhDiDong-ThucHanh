@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BTH4 - Lập trình di động</string>
+    <string name="survey_screen_title">Bài 1: Khảo sát</string>
+    <string name="country_screen_title">Bài 2: Quốc gia</string>
+    <string name="download_screen_title">Bài 3: Tải ảnh</string>
+    <string name="survey_title">Khảo sát người dùng</string>
+    <string name="name_hint">Nhập tên</string>
+    <string name="gender_male">Nam</string>
+    <string name="gender_female">Nữ</string>
+    <string name="hobby_music">Nghe nhạc</string>
+    <string name="hobby_movies">Xem phim</string>
+    <string name="hobby_reading">Đọc sách</string>
+    <string name="submit_survey">Gửi khảo sát</string>
+    <string name="survey_name_required">Vui lòng nhập tên!</string>
+    <string name="no_hobbies">Không có</string>
+    <string name="survey_summary">Chào %1$s\nGiới tính: %2$s\nSở thích: %3$s</string>
+    <string name="country_title">Chọn quốc gia</string>
+    <string name="country_selector">Danh sách quốc gia</string>
+    <string name="flag_description">Quốc kỳ của quốc gia đang chọn</string>
+    <string name="dialog_title">Thông báo</string>
+    <string name="dialog_ok">OK</string>
+    <string name="country_selected">Bạn đã chọn: %1$s</string>
+    <string name="download_image">Tải ảnh</string>
+    <string name="loading_image">Đang tải ảnh</string>
+    <string name="downloaded_image">Ảnh đã tải xong</string>
+    <string name="nav_country">Câu 2 - Chọn quốc gia</string>
+    <string name="nav_download">Câu 3 - Tải ảnh</string>
+
+    <string-array name="countries">
+        <item>Việt Nam</item>
+        <item>Mỹ</item>
+        <item>Nhật Bản</item>
+        <item>Pháp</item>
+    </string-array>
+</resources>

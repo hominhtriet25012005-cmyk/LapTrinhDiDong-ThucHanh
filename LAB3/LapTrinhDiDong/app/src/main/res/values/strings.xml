@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">LapTrinhDiDong</string>
+    <string name="user_avatar_description">Ảnh đại diện người dùng</string>
+    <string name="welcome">Welcome!</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="registration_title">Đăng ký tài khoản</string>
+    <string name="full_name_label">Họ tên:</string>
+    <string name="full_name_placeholder">Nhập họ tên</string>
+    <string name="email_label">Email:</string>
+    <string name="email_placeholder">Nhập email</string>
+    <string name="password_label">Mật khẩu:</string>
+    <string name="password_placeholder">Nhập mật khẩu</string>
+    <string name="create_account">Tạo tài khoản</string>
+    <string name="already_have_account">Đã có tài khoản?</string>
+    <string name="login">Đăng nhập</string>
+    <string name="open_registration_layout">Màn đăng ký 2</string>
+    <string name="open_calculator_layout">Máy tính</string>
+    <string name="calculator_sample_expression">9+7</string>
+    <string name="calculator_sample_result">16</string>
+    <string name="calculator_clear_entry">CE</string>
+    <string name="calculator_delete">Del</string>
+    <string name="calculator_multiply">×</string>
+    <string name="calculator_divide">÷</string>
+    <string name="calculator_add">+</string>
+    <string name="calculator_subtract">-</string>
+    <string name="calculator_digit_0">0</string>
+    <string name="calculator_digit_1">1</string>
+    <string name="calculator_digit_2">2</string>
+    <string name="calculator_digit_3">3</string>
+    <string name="calculator_digit_4">4</string>
+    <string name="calculator_digit_5">5</string>
+    <string name="calculator_digit_6">6</string>
+    <string name="calculator_digit_7">7</string>
+    <string name="calculator_digit_8">8</string>
+    <string name="calculator_digit_9">9</string>
+    <string name="calculator_equals">=</string>
+    <string name="calculator_decimal">.</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#FFFFFF" android:gravity="center_horizontal" android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:padding="24dp" xmlns:android="[http://schemas.android.com/apk/res/android](http://schemas.android.com/apk/res/android)">
+
+    <TextView android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:layout_width="wrap_content" android:text="Khảo sát người dùng" android:textSize="24sp" android:textStyle="bold"/>
+
+    <EditText android:background="@drawable/edittext_bg" android:hint="Nhập tên" android:id="@+id/etName" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_width="match_parent" android:padding="12dp"/>
+
+    <RadioGroup android:gravity="center_horizontal" android:id="@+id/rgGender" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_width="match_parent" android:orientation="horizontal">
+        <RadioButton android:checked="true" android:id="@+id/rbMale" android:layout_height="wrap_content" android:layout_marginEnd="32dp" android:layout_width="wrap_content" android:text="Nam"/> <!-- Mặc định chọn Nam -->
+        <RadioButton android:id="@+id/rbFemale" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Nữ"/>
+    </RadioGroup>
+
+    <!-- Các CheckBox Sở thích -->
+    <LinearLayout android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:layout_width="match_parent" android:orientation="vertical">
+        <CheckBox android:id="@+id/cbMusic" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Nghe nhạc"/>
+        <CheckBox android:id="@+id/cbMovie" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Xem phim"/>
+        <CheckBox android:id="@+id/cbBook" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Đọc sách"/>
+    </LinearLayout>
+
+    <Button android:backgroundTint="#3366CC" android:id="@+id/btnSubmit" android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingHorizontal="32dp" android:paddingVertical="12dp" android:text="Gửi khảo sát" android:textAllCaps="false" android:textColor="#FFFFFF"/>
+</LinearLayout>

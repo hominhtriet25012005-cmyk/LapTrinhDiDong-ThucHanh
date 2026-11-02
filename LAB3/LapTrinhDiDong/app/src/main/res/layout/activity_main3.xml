@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Vùng hiển thị biểu thức và kết quả -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/screen_background"
+        android:padding="12dp">
+
+        <!-- InputText: Hiển thị phép tính (Góc trên trái) -->
+        <TextView
+            android:id="@+id/inputText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calculator_sample_expression"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="start"/>
+
+        <!-- ResultText: Hiển thị kết quả (Góc dưới phải) -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculator_sample_result"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Lưới nút bấm (GridLayout) -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="16dp"
+        android:rowOrderPreserved="false">
+
+        <!-- Dòng 1 -->
+        <Button android:text="@string/calculator_clear_entry" style="@style/CalcButton.Red" android:layout_row="0" android:layout_column="0" />
+        <Button android:text="@string/calculator_delete" style="@style/CalcButton.Yellow" android:layout_row="0" android:layout_column="1" />
+        <Button android:text="@string/calculator_multiply" style="@style/CalcButton.Green" android:layout_row="0" android:layout_column="2" />
+        <Button android:text="@string/calculator_divide" style="@style/CalcButton.Green" android:layout_row="0" android:layout_column="3" />
+
+        <!-- Dòng 2 -->
+        <Button android:text="@string/calculator_digit_1" style="@style/CalcButton" android:layout_row="1" android:layout_column="0" />
+        <Button android:text="@string/calculator_digit_2" style="@style/CalcButton" android:layout_row="1" android:layout_column="1" />
+        <Button android:text="@string/calculator_digit_3" style="@style/CalcButton" android:layout_row="1" android:layout_column="2" />
+        <Button android:text="@string/calculator_add" style="@style/CalcButton.Green" android:layout_row="1" android:layout_column="3" />
+
+        <!-- Dòng 3 -->
+        <Button android:text="@string/calculator_digit_4" style="@style/CalcButton" android:layout_row="2" android:layout_column="0" />
+        <Button android:text="@string/calculator_digit_5" style="@style/CalcButton" android:layout_row="2" android:layout_column="1" />
+        <Button android:text="@string/calculator_digit_6" style="@style/CalcButton" android:layout_row="2" android:layout_column="2" />
+        <Button android:text="@string/calculator_subtract" style="@style/CalcButton.Green" android:layout_row="2" android:layout_column="3" />
+
+        <!-- Dòng 4 -->
+        <Button android:text="@string/calculator_digit_7" style="@style/CalcButton" android:layout_row="3" android:layout_column="0" />
+        <Button android:text="@string/calculator_digit_8" style="@style/CalcButton" android:layout_row="3" android:layout_column="1" />
+        <Button android:text="@string/calculator_digit_9" style="@style/CalcButton" android:layout_row="3" android:layout_column="2" />
+        <!-- Dấu = chiếm 2 dòng (layout_rowSpan) -->
+        <Button
+            android:text="@string/calculator_equals"
+            style="@style/CalcButton.Blue"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_rowSpan="2" />
+
+        <!-- Dòng 5 -->
+        <!-- Số 0 chiếm 2 cột (layout_columnSpan) -->
+        <Button
+            android:text="@string/calculator_digit_0"
+            style="@style/CalcButton"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnSpan="2" />
+        <Button android:text="@string/calculator_decimal" style="@style/CalcButton" android:layout_row="4" android:layout_column="2" />
+    </GridLayout>
+</LinearLayout>

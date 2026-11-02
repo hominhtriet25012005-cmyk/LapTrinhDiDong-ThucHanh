@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style gốc cho các nút bấm số -->
+    <style name="CalcButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:backgroundTint">@color/calculator_button</item>
+        <item name="android:textColor">@color/calculator_button_text</item>
+    </style>
+
+    <!-- Các Style màu sắc kế thừa từ Style gốc -->
+    <style name="CalcButton.Red" parent="CalcButton">
+        <item name="android:backgroundTint">@color/calculator_clear</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="CalcButton.Blue" parent="CalcButton">
+        <item name="android:backgroundTint">@color/calculator_equals</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="CalcButton.Yellow" parent="CalcButton">
+        <item name="android:backgroundTint">@color/calculator_delete</item>
+    </style>
+    <style name="CalcButton.Green" parent="CalcButton">
+        <item name="android:backgroundTint">@color/calculator_operator</item>
+    </style>
+</resources>
