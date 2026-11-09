@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LapTrinhDiDong</string>
+    <string name="lab5_title">LAB5</string>
+    <string name="lab5_choose_part">Chọn nội dung thực hành</string>
+    <string name="open_part1">Phần 1 - Danh sách sinh viên</string>
+    <string name="open_part2">Phần 2 - Lưới hình ảnh</string>
+    <string name="menu_open_part2">Phần 2 - Lưới hình ảnh</string>
+</resources>

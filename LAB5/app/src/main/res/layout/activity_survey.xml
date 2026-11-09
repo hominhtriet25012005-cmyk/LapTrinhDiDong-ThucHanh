@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Khảo sát người dùng"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="Nhập tên"
+        android:padding="12dp" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:checked="true"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cbMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nghe nhạc" />
+
+        <CheckBox
+            android:id="@+id/cbMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem phim" />
+
+        <CheckBox
+            android:id="@+id/cbBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đọc sách" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3366CC"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="12dp"
+        android:text="Gửi khảo sát"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
